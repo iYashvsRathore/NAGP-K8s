@@ -39,7 +39,7 @@ To deploy the solution, follow these steps:
 [https://github.com/iYashvsRathore/NAGP-K8s/new/master](https://github.com/iYashvsRathore/NAGP-K8s)
 
 ## Docker hub URL for docker images
-1. Dot Net API Docker Image: https://hub.docker.com/repository/docker/iyashvsrathore/nagpkubernetesassignment/general
+1. Dot Net API Docker Image: https://hub.docker.com/r/iyashvsrathore/nagpkubernetesassignment/tags
 2. SQL Server Docker Image: https://hub.docker.com/_/microsoft-mssql-server
 
 ## Demo Recording Video URL
