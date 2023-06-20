@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sql-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sql-server
+  template:
+    metadata:
+      labels:
+        app: sql-server
+    spec:
+      containers:
+      - name: sql-server
+        image: mcr.microsoft.com/mssql/server:2017-latest
+        ports:
+        - containerPort: 1433
+        envFrom:
+        - configMapRef:
+            name: api-configmap
+        - secretRef:
+            name: api-secrets
+        volumeMounts:
+            - name: sqlserver-data-storage
+              mountPath: /var/opt/mssql
+      terminationGracePeriodSeconds: 10
+      volumes:
+        - name: sqlserver-data-storage
+          persistentVolumeClaim:
+            claimName: sqlserver-data-persisent-volume-claim

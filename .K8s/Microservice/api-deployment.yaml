@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+      - name: api
+        image: iyashvsrathore/nagpkubernetesassignment
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: api-configmap
+        - secretRef:
+            name: api-secrets
+
+#rolling updates

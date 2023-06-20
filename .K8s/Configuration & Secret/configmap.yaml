@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-configmap
+  labels:
+    app: api-configmap
+data:
+  SQL_HOST: sqlsever-database-service
+  SQL_HOST_PORT: "1433"
+  SQL_DATABASE: User
+  SQL_USERNAME: sa
+  ACCEPT_EULA: "Y"
+  
