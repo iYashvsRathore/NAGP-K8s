@@ -43,6 +43,7 @@ To deploy the solution, follow these steps:
 2. SQL Server Docker Image: https://hub.docker.com/_/microsoft-mssql-server
 
 ## Demo Recording Video URL
+https://nagarro-my.sharepoint.com/:v:/p/yash_rathore/EZ3Q1fKeuBxGlPxKFrE4TXEB7uZ3xuKMz4lE8zC1-2Sogw
 
 ## Docker File Path
 [Docker File](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/NAGPK8s/Dockerfile "~/NAGPK8s/Dockerfilee"): https://github.com/iYashvsRathore/NAGP-K8s/blob/master/NAGPK8s/Dockerfile
