@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:45786",
+      "sslPort": 44368
+    }
+  },
+  "profiles": {
+    "NAGPK8s": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SQL_HOST": "nagptest.database.windows.net",
+        "SQL_HOST_PORT": "1443",
+        "SQL_DATABASE": "User",
+        "SQL_USERNAME": "sysadmin",
+        "SQL_PASSWORD": "Simple#123"
+      },
+      "applicationUrl": "https://localhost:7208;http://localhost:5208",
+      "dotnetRunMessages": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SQL_HOST": "nagptest.database.windows.net",
+        "SQL_DATABASE": "User",
+        "SQL_USERNAME": "sysadmin",
+        "SQL_PASSWORD": "Simple#123"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}
