@@ -19,15 +19,15 @@ To deploy the solution, follow these steps:
     4. `$ kubectl apply -f database-service.yaml`
 6. Create the Database and Tables in the Database using folowwing commands.\
     `# Retrieve the secret value into a variable`
-    `SA_PASSWORD=$(kubectl get secret SA_PASSWORD -o jsonpath='{.data.<data-key>}' | base64 --decode)`
-    `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -Q 'CREATE DATABASE [User]'`
+    `SA_PASSWORD=$(kubectl get secret SA_PASSWORD -o jsonpath='{.data.<data-key>}' | base64 --decode)` \
+    `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -Q 'CREATE DATABASE [User]'` \
     `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P &SA_PASSWORD -Q 'use [User] CREATE TABLE [Users]
       (
           [Id] INT NOT NULL PRIMARY KEY, 
           [Username] NVARCHAR(50) NULL, 
           [Name] NVARCHAR(100) NULL, 
           [EmailID] NVARCHAR(100) NULL
-      )'`
+      )'`\
 7. Access the API from outside the cluster using the LoadBalancer service.
 
 
