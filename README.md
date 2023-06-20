@@ -37,10 +37,11 @@ https://hub.docker.com/repository/docker/iyashvsrathore/nagpkubernetesassignment
 ## Kubernetes YAML Files
 
 1. [API Deployment](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/.K8s/Microservice/api-deployment.yaml "API Deployment File") File
-2. *API Service* File: ~/K8s/Microservice/api-service.yaml
-3. *Database Deployment* File: ~/K8s/Database/database-deployment.yaml
-4. *Database Service* File: ~/K8s/Database/database-service.yaml
-5. *Persistence Volume Claim* File: ~/K8s/Volumes/persistence-volume-claim.yaml
-6. *Storage Class* File: ~/K8s/Volumes/storage-class.yaml
-7. *Config Map* File: ~/K8s/Configuration & Secret/configmap.yaml
-8. *Secret* File: ~/K8s/Configuration & Secret/secret.yaml
+2. [API Service](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/.K8s/Microservice/api-service.yaml "API Service File") File
+3. [Database Deployment](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/.K8s/Database/database-deployment.yaml, "Database Deployment 
+ File") File
+4. [Database Service](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/.K8s/Database/database-service.yaml "Database Service File") File
+5. [Persistence Volume Claim](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/.K8s/Volumes/persistece-volume-claim.yaml "Persistence Volume Claim File") File:
+6. [Storage Class](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/.K8s/Volumes/storage-class.yaml "Storage Class") File
+7. [Config Map](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/.K8s/Configuration%20%26%20Secret/configmap.yaml "Config Map File") File
+8. [Secret](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/.K8s/Configuration%20%26%20Secret/secret.yaml "Secret File") File
