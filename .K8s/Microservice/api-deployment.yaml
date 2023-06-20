@@ -24,5 +24,3 @@ spec:
             name: api-configmap
         - secretRef:
             name: api-secrets
-
-#rolling updates
