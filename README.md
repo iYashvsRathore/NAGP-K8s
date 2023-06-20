@@ -32,11 +32,11 @@ https://hub.docker.com/repository/docker/iyashvsrathore/nagpkubernetesassignment
 ## Demo Recording Video URL
 
 ## Docker File Path
-[Named Link](~/NAGPK8s/Dockerfile "~/NAGPK8s/Dockerfilee")
+[Docker File](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/NAGPK8s/Dockerfile "~/NAGPK8s/Dockerfilee"): https://github.com/iYashvsRathore/NAGP-K8s/blob/master/NAGPK8s/Dockerfile
 
 ## Kubernetes YAML Files
 
-1. *API Deployment* File: ~/K8s/Microservice/api-deployment.yaml
+1. [API Deployment](https://github.com/iYashvsRathore/NAGP-K8s/blob/master/.K8s/Microservice/api-deployment.yaml "API Deployment File") File
 2. *API Service* File: ~/K8s/Microservice/api-service.yaml
 3. *Database Deployment* File: ~/K8s/Database/database-deployment.yaml
 4. *Database Service* File: ~/K8s/Database/database-service.yaml
