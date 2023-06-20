@@ -32,7 +32,7 @@ https://hub.docker.com/repository/docker/iyashvsrathore/nagpkubernetesassignment
 ## Demo Recording Video URL
 
 ## Docker File Path
-<~/NAGPK8s/Dockerfile>
+[Named Link](~/NAGPK8s/Dockerfile "~/NAGPK8s/Dockerfilee")
 
 ## Kubernetes YAML Files
 
