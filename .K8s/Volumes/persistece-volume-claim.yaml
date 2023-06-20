@@ -4,7 +4,6 @@ metadata:
   name: sqlserver-data-persisent-volume-claim
 spec:
   storageClassName: database-storage-class
-  allowVolumeExpansion: true
   accessModes:
     - ReadWriteOnce
   resources:
