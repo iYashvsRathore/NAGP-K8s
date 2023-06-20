@@ -19,9 +19,10 @@ To deploy the solution, follow these steps:
     4. `$ kubectl apply -f database-service.yaml`
 6. Create the Database and Tables in the Database using folowwing commands.\
     
-    `SA_PASSWORD=$(kubectl get secret SA_PASSWORD -o jsonpath='{.data.<data-key>}' | base64 --decode)` \
+    `SA_PASSWORD=$(kubectl get secret SA_PASSWORD -o jsonpath='{.data.<data-key>}' | base64 --decode)`
    
-    `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -Q 'CREATE DATABASE [User]'` \
+    `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -Q 'CREATE DATABASE [User]'`
+   
     `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P &SA_PASSWORD -Q 'use [User] CREATE TABLE [Users]
       (
           [Id] INT NOT NULL PRIMARY KEY, 
