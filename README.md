@@ -5,7 +5,7 @@ This repository contains the solution for the Kubernetes & DevOps Advanced assig
 To deploy the solution, follow these steps:
 
 1. Set up a Kubernetes cluster.
-2. Run the GitHub Action to build the Docker image for the API project using the provided Dockerfile and Push the Docker image to your *iyashvsrathore* Docker Hub repository.
+2. Run the GitHub Action to build the Docker image for the API project using the provided Dockerfile and Push the Docker image to *iyashvsrathore* Docker Hub repository.
 3. Configure the necessary environment variables and secrets using the provided deployment files (*~/.K8s/Configuration & Secret*).
 4. Create the Volumes and Storage using the provided deployment files (*~/.K8s/Volumes*).
 5. Deploy the microservice and database and their services on the Kubernetes cluster using the provided deployment files (*~/.K8s/Microservice* and *~/.K8s/Database*).
