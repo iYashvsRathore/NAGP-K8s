@@ -4,6 +4,8 @@ metadata:
   name: api-deployment
 spec:
   replicas: 4
+  strategy:
+    type: RollingUpdate
   selector:
     matchLabels:
       app: api
