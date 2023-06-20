@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using NAGPK8s.Repository;
+using NAGPK8s.Utilities;
 
 namespace NAGPK8s
 {
@@ -15,7 +16,7 @@ namespace NAGPK8s
 
 		public void ConfigureServices(IServiceCollection services)
 		{
-			var dbConnectionString = Configuration.GetConnectionString("DefaultConnection");
+			var dbConnectionString = DataUtil.ResolveDbConnectionString(Configuration);
 
 			services.AddControllers();
 			services.AddEndpointsApiExplorer();
