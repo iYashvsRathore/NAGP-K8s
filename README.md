@@ -10,14 +10,14 @@ To deploy the solution, follow these steps:
 4. Create the Volumes and Storage using the provided deployment files (*~/.K8s/Volumes*).
 5. Deploy the microservice and database and their services on the Kubernetes cluster using the provided deployment files (*~/.K8s/Microservice* and *~/.K8s/Database*).
 6. Create the Database and Tables in the Database using folowwing commands.
-    `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P '<SA_PASSWORD>' -Q 'CREATE DATABASE [User]'`
-    `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P '<SA_PASSWORD>' -Q 'use [User] CREATE TABLE [Users]
+    1. `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P '<SA_PASSWORD>' -Q 'CREATE DATABASE [User]'`
+    2. `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P '<SA_PASSWORD>' -Q 'use [User] CREATE TABLE [Users]
       (
           [Id] INT NOT NULL PRIMARY KEY, 
           [Username] NVARCHAR(50) NULL, 
           [Name] NVARCHAR(100) NULL, 
           [EmailID] NVARCHAR(100) NULL
-      )'
+      )'`
 8. Access the API from outside the cluster using the LoadBalancer service.
 
 
@@ -40,4 +40,7 @@ https://hub.docker.com/repository/docker/iyashvsrathore/nagpkubernetesassignment
 2. *API Service* File: ~/K8s/Microservice/api-service.yaml
 3. *Database Deployment* File: ~/K8s/Database/database-deployment.yaml
 4. *Database Service* File: ~/K8s/Database/database-service.yaml
-5. *Persistence Volume Claim* File: ~/K8s/Database/database-service.yaml
+5. *Persistence Volume Claim* File: ~/K8s/Volumes/persistence-volume-claim.yaml
+6. *Storage Class* File: ~/K8s/Volumes/storage-class.yaml
+7. *Config Map* File: ~/K8s/Configuration & Secret/configmap.yaml
+8. *Secret* File: ~/K8s/Configuration & Secret/secret.yaml
