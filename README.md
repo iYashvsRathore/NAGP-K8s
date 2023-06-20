@@ -7,8 +7,16 @@ To deploy the solution, follow these steps:
 1. Set up a Kubernetes cluster.
 2. Run the GitHub Action to build the Docker image for the API project using the provided Dockerfile and Push the Docker image to *iyashvsrathore* Docker Hub repository.
 3. Configure the necessary environment variables and secrets using the provided deployment files (*~/.K8s/Configuration & Secret*).
+    1. `$ kubectl apply -f configmap.yaml`
+    2. `$ kubectl apply -f secret.yaml`
 4. Create the Volumes and Storage using the provided deployment files (*~/.K8s/Volumes*).
+    1. `$ kubectl apply -f persistece-volume-claim.yaml`
+    2. `$ kubectl apply -f storage-class.yaml`
 5. Deploy the microservice and database and their services on the Kubernetes cluster using the provided deployment files (*~/.K8s/Microservice* and *~/.K8s/Database*).
+    1. `$ kubectl apply -f api-deployment.yaml`
+    2. `$ kubectl apply -f api-service.yaml`
+    3. `$ kubectl apply -f database-deployment.yaml`
+    4. `$ kubectl apply -f database-service.yaml`
 6. Create the Database and Tables in the Database using folowwing commands.
     1. `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P '<SA_PASSWORD>' -Q 'CREATE DATABASE [User]'`
     2. `kubectl exec -it <pod-name> -- /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P '<SA_PASSWORD>' -Q 'use [User] CREATE TABLE [Users]
