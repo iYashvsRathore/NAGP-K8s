@@ -24,7 +24,7 @@ To deploy the solution, follow these steps:
 # Important Resources
 
 ## Link for the code repository :
-https://github.com/iYashvsRathore/NAGP-K8s/new/master?readme=1
+[https://github.com/iYashvsRathore/NAGP-K8s/new/master](https://github.com/iYashvsRathore/NAGP-K8s)
 
 ## Docker hub URL for docker images
 https://hub.docker.com/repository/docker/iyashvsrathore/nagpkubernetesassignment/general
