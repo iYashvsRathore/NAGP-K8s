@@ -27,7 +27,7 @@ To deploy the solution, follow these steps:
           [Username] NVARCHAR(50) NULL, 
           [Name] NVARCHAR(100) NULL, 
           [EmailID] NVARCHAR(100) NULL
-      )'`\
+      )'`
 7. Access the API from outside the cluster using the LoadBalancer service.
 
 
